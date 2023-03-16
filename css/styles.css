@@ -1,49 +1,73 @@
+:root {
+  --primary-brand: #4d5ae5;
+  --pressed-state: #404bbf;
+  --dark: #2e2f42;
+  --success: #31d0aa;
+  --text: #434455;
+  --subtle-text: #8e8f99;
+  --accent: #e7e9fc;
+  --light: #f4f4fd;
+  --white-background: #ffffff;
+  --modal-background: #fcfcfc;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
   list-style: none;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1.5;
+  color: var(--dark);
 }
 
 .header-logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: inherit;
-  color: #4d5ae5;
+  color: var(--primary-brand);
 }
 
 .header-studio {
   font-weight: 800;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #2e2f42;
+  color: var(--dark);
 }
 
 .header-nav {
   font-weight: 800;
   font-size: 18px;
-  line-height: 21px;
+  font-style: normal;
+  line-height: 1.1;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--dark);
   text-decoration: inherit;
 }
 
 .nav-link {
   color: inherit;
+  font-style: normal;
   text-decoration: inherit;
+}
+
+.nav-link:active {
+  color: var(--pressed-state);
 }
 
 .header-adress {
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--text);
+  font-style: inherit;
 }
 
 .adress-link {
@@ -51,34 +75,54 @@ body {
   text-decoration: inherit;
 }
 
+.adress-link:active {
+  color: var(--pressed-state);
+}
+
 .banner {
   width: 1440px;
   height: 600px;
   left: 0px;
   top: 72px;
-  background: #2e2f42;
+  background: var(--dark);
 }
 
 .banner-title {
+  font-family: inherit;
   font-weight: 700;
   font-size: 56px;
-  line-height: 60px;
-  color: #ffffff;
+  line-height: 1.07;
+  color: var(--white-background);
 }
 
 .banner-button {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
+  line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #ffffff;
+  color: var(--white-background);
   width: 169px;
   height: 56px;
   left: 636px;
   top: 428px;
-  background: #4d5ae5;
+  background: var(--primary-brand);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.banner-button:hover {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white-background);
+  width: 169px;
+  height: 56px;
+  left: 636px;
+  top: 428px;
+  background: var(--pressed-state);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
@@ -86,40 +130,40 @@ body {
 .about-subtitle {
   font-weight: 500;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--dark);
 }
 
 .about-text {
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--text);
 }
 
 .main-title {
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--dark);
 }
 
 .team-subtitle {
   font-weight: 500;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--dark);
 }
 
 .team-desc {
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--text);
 }
 
 .banner-footer {
@@ -127,22 +171,22 @@ body {
   height: 312px;
   left: 0px;
   top: 2280px;
-  background: #2e2f42;
+  background: var(--dark);
 }
 
 .footer-desc {
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #f4f4fd;
+  color: var(--light);
 }
 
 .footer-studio {
   font-weight: 800;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #f4f4fd;
+  color: var(--light);
 }
