@@ -54,6 +54,7 @@ body {
 .nav-link {
   color: var(--dark);
   font-style: normal;
+  font-size: 16px;
   text-decoration: inherit;
 }
 
